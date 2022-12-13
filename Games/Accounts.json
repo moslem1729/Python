@@ -1,0 +1,18 @@
+{
+    "moslem1729": {
+        "name": "moslem",
+        "family": "ghalandari",
+        "username": "moslem1729",
+        "email": "moslem2167@gmail.com",
+        "credit": 0,
+        "hashpass": "5fd8f42f4b7cef8909617fca005522cb3c2f06f9434e8e8cb7f4907314d5fbd4"
+    },
+    "ali": {
+        "name": "ali",
+        "family": "poudineh",
+        "username": "ali",
+        "email": "ali@gmail.com",
+        "credit": 0,
+        "hashpass": "d5083e34522626dd10e151c78c1ba502a3d67427b752c3fd43bd3b944072d1e7"
+    }
+}
