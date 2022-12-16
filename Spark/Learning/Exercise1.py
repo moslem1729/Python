@@ -29,11 +29,10 @@ books_avg_rate = books_avg_rate.join(books, books_avg_rate['isbn'] == books['isb
 
 books_avg_rate.select(["BookTitle", "avg(rate)"])
 
-result = result.select(["USERNAME", "BookTitle", "rate"])
+result = result.select(["USERNAME", col("BookTitle").alias("bt"), "rate"])
 
-result = result.join(books_avg_rate, books_avg_rate["BookTitle"] == result["BookTitle"])
+result = result.join(books_avg_rate, books_avg_rate["BookTitle"] == result["bt"])
 
-# result = result.select(["USERNAME", "BookTitle", "rate", "avg(rate)"])
-result.show()
-
+result = result.select(["USERNAME", "BookTitle", "rate", col("avg(rate)").alias("Book Avg’ rate")])
+result.write.csv('BooksRating-CSV/output.csv')
 # books_avg_rate.join(books, books['ISBN'] == books_avg_rate['ISBN']).show()

@@ -133,18 +133,3 @@ class LinkedList(object):
                 string_linked_list += str(current_node.data)
                 break
         print(string_linked_list)
-
-
-linked_list = LinkedList()
-linked_list.insert_and_sort(1)
-linked_list.insert_and_sort(1)
-linked_list.insert_and_sort(3)
-linked_list.insert_and_sort(4)
-linked_list.insert_and_sort(4)
-linked_list.insert_and_sort(4)
-linked_list.insert_and_sort(5)
-linked_list.insert_and_sort(6)
-linked_list.insert_and_sort(6)
-linked_list.print_linked_list()
-
-linked_list.print_linked_list()
