@@ -7,3 +7,4 @@ bcrypt
 python-multipart
 python-jose
 jose~=1.0.0
+aiofiles
